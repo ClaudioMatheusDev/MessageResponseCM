@@ -1,0 +1,20 @@
+cat > docker-compose.yml << 'EOF'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"     # AMQP (conexão da aplicação)
+      - "15672:15672"   # Painel admin web
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
+EOF
+
+
+docker compose up -d
