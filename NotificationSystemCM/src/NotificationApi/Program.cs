@@ -1,4 +1,7 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using MassTransit;
+using NotificationApi.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +24,11 @@ builder.Services.AddMassTransit(x =>
 });
 
 builder.Services.AddControllers();
+builder.Services.AddFluentValidationAutoValidation(); // Ativa a validação automática
+
+builder.Services.AddValidatorsFromAssemblyContaining<UserRegisteredValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<OrderConfirmedValidator>();
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
