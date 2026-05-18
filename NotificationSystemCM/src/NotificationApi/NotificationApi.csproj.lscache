@@ -361,11 +361,12 @@ Program.cs
 <NUGET>/
  fluentvalidation.aspnetcore/11.3.1/lib/net6.0/FluentValidation.AspNetCore.dll
  fluentvalidation.dependencyinjectionextensions/11.11.0/lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll
- fluentvalidation/11.11.0/lib/net8.0/FluentValidation.dll
- masstransit.abstractions/9.1.1/lib/net9.0/MassTransit.Abstractions.dll
- masstransit.rabbitmq/9.1.1/lib/net9.0/MassTransit.RabbitMqTransport.dll
- masstransit/9.1.1/lib/net9.0/MassTransit.dll
+ fluentvalidation/12.1.1/lib/net8.0/FluentValidation.dll
+ masstransit.abstractions/8.0.0/lib/netstandard2.0/MassTransit.Abstractions.dll
+ masstransit.rabbitmq/8.0.0/lib/netstandard2.0/MassTransit.RabbitMqTransport.dll
+ masstransit/8.0.0/lib/netstandard2.0/MassTransit.dll
  microsoft.aspnetcore.openapi/9.0.16/lib/net9.0/Microsoft.AspNetCore.OpenApi.dll
+ microsoft.bcl.asyncinterfaces/6.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll
  microsoft.extensions.configuration.abstractions/10.0.0/lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
  microsoft.extensions.configuration.binder/10.0.0/lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll
  microsoft.extensions.configuration/10.0.0/lib/net9.0/Microsoft.Extensions.Configuration.dll
@@ -380,7 +381,7 @@ Program.cs
  microsoft.extensions.options/10.0.0/lib/net9.0/Microsoft.Extensions.Options.dll
  microsoft.extensions.primitives/10.0.0/lib/net9.0/Microsoft.Extensions.Primitives.dll
  microsoft.openapi/1.6.17/lib/netstandard2.0/Microsoft.OpenApi.dll
- rabbitmq.client/7.2.1/lib/net8.0/RabbitMQ.Client.dll
+ rabbitmq.client/6.2.4/lib/netstandard2.0/RabbitMQ.Client.dll
  serilog.aspnetcore/10.0.0/lib/net9.0/Serilog.AspNetCore.dll
  serilog.extensions.hosting/10.0.0/lib/net9.0/Serilog.Extensions.Hosting.dll
  serilog.extensions.logging/10.0.0/lib/net9.0/Serilog.Extensions.Logging.dll
