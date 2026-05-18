@@ -8,5 +8,7 @@
         public string NomePedido { get; set; } = null!;
         public string DescricaoPedido { get; set; } = null!;
         public string Email { get; set; } = null!;
+    
+
     }
 }
