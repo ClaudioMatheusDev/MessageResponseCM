@@ -53,13 +53,20 @@ TemporaryDependencyNodeTargetIdentifier=net9.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-Controllers/WeatherForecastController.cs
+Controllers/NotificationsController.cs
+Dtos/
+ OrderConfirmedValidator.cs
+ UserRegisteredValidator.cs
+ UsuarioDTO.cs
+ UsuarioDTOValidator.cs
+Events/
+ OrderConfirmed.cs
+ UserRegistered.cs
 obj/Debug/net9.0/
  .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
  NotificationApi.AssemblyInfo.cs
  NotificationApi.GlobalUsings.g.cs
 Program.cs
-WeatherForecast.cs
 
 [metadataReferences]
 ../NotificationContracts/obj/Debug/net9.0/ref/NotificationContracts.dll
