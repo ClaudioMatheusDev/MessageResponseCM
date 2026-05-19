@@ -24,10 +24,10 @@ builder.Services.AddMassTransit(x =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddFluentValidationAutoValidation(); // Ativa a validação automática
+builder.Services.AddFluentValidationAutoValidation(); // Ativa a validaï¿½ï¿½o automï¿½tica
 
+// Registra os validadores do FluentValidation
 builder.Services.AddValidatorsFromAssemblyContaining<UserRegisteredValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<OrderConfirmedValidator>();
 
 builder.Services.AddOpenApi();
 

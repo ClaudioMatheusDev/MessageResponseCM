@@ -12,7 +12,7 @@ namespace NotificationApi.Dtos
             RuleFor(x => x.Nome).NotEmpty().WithMessage("O nome é obrigatório.")
                 .MinimumLength(3).WithMessage("O nome deve ter pelo menos 3 caracteres.");
 
-            RuleFor(x => x.Email).NotEmpty().WithMessage("O E-mail não é valido")
+            RuleFor(x => x.Email).NotEmpty().WithMessage("O E-mail é obrigatório.")
                 .EmailAddress().WithMessage("O e-mail deve ser válido.");
         }
     }

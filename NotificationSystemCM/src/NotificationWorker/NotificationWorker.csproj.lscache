@@ -53,12 +53,14 @@ TemporaryDependencyNodeTargetIdentifier=net9.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Consumers/
+ PedidoConfirmadoConsumer.cs
+ UsuarioCadastradoConsumer.cs
 obj/Debug/net9.0/
  .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
  NotificationWorker.AssemblyInfo.cs
  NotificationWorker.GlobalUsings.g.cs
 Program.cs
-Worker.cs
 
 [metadataReferences]
 ../NotificationContracts/obj/Debug/net9.0/ref/NotificationContracts.dll
