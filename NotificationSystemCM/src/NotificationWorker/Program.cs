@@ -1,7 +1,25 @@
 using MassTransit;
 using NotificationWorker.Consumers;
 
+using FluentEmail.Core;
+using FluentEmail.Smtp;
+
+
 var builder = Host.CreateApplicationBuilder(args);
+
+// Lê as configurações do SMTP do appsettings.json
+var smtpHost = builder.Configuration.GetValue<string>("Smtp:Host");
+var smtpPort = builder.Configuration.GetValue<int>("Smtp:Port");
+var smtpSender = builder.Configuration.GetValue<string>("Smtp:Sender");
+
+// Configura o FluentEmail para usar o SMTP com as variáveis lidas do appsettings.json
+builder.Services
+    .AddFluentEmail(smtpSender)
+    .AddSmtpSender(new System.Net.Mail.SmtpClient(smtpHost)
+    {
+        Port = smtpPort,
+        EnableSsl = false
+    });
 
 // Lê as configurações do RabbitMQ do appsettings.json
 var rabbitHost = builder.Configuration.GetSection("MassTransit:RabbitMq:Host").Value;

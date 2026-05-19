@@ -231,9 +231,9 @@ Program.cs
 <NUGET>/
  fluentemail.core/3.0.2/lib/netstandard2.0/FluentEmail.Core.dll
  fluentemail.smtp/3.0.2/lib/netstandard2.0/FluentEmail.Smtp.dll
- masstransit.abstractions/9.1.1/lib/net9.0/MassTransit.Abstractions.dll
- masstransit.rabbitmq/9.1.1/lib/net9.0/MassTransit.RabbitMqTransport.dll
- masstransit/9.1.1/lib/net9.0/MassTransit.dll
+ masstransit.abstractions/8.3.6/lib/net9.0/MassTransit.Abstractions.dll
+ masstransit.rabbitmq/8.3.6/lib/net9.0/MassTransit.RabbitMqTransport.dll
+ masstransit/8.3.6/lib/net9.0/MassTransit.dll
  microsoft.extensions.configuration.abstractions/10.0.0/lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
  microsoft.extensions.configuration.binder/9.0.16/lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll
  microsoft.extensions.configuration.commandline/9.0.16/lib/net9.0/Microsoft.Extensions.Configuration.CommandLine.dll
@@ -263,7 +263,7 @@ Program.cs
  microsoft.extensions.options.configurationextensions/9.0.16/lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
  microsoft.extensions.options/10.0.0/lib/net9.0/Microsoft.Extensions.Options.dll
  microsoft.extensions.primitives/10.0.0/lib/net9.0/Microsoft.Extensions.Primitives.dll
- rabbitmq.client/7.2.1/lib/net8.0/RabbitMQ.Client.dll
+ rabbitmq.client/7.0.0/lib/net8.0/RabbitMQ.Client.dll
  serilog.extensions.hosting/10.0.0/lib/net9.0/Serilog.Extensions.Hosting.dll
  serilog.extensions.logging/10.0.0/lib/net9.0/Serilog.Extensions.Logging.dll
  serilog.sinks.console/6.1.1/lib/net8.0/Serilog.Sinks.Console.dll
